@@ -135,13 +135,8 @@
         margin: 8px 0;
     }
     .setka {
-      display: grid;
-      grid-template-areas:
-        "content content"
-        "aside aside";
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      column-gap: 16px;
+      display: flex;
+      flex-direction: column;
     }
     .aside {
       grid-area: aside;
@@ -149,6 +144,7 @@
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 480px 248px;
       gap: 16px;
+      margin-bottom: 59px;
     }
     
     .aside__card-1, .aside__card-2, .aside__card-3, .aside__card-4 {
